@@ -68,7 +68,7 @@ export default class SortableTable {
     this.queryParams._start = start;
     this.queryParams._end = start + step;
     this.queryParams._sort = header.find(item => item.sortable).id;
-    this.isSortLocally = false;
+    this.isSortLocally = isSortLocally;
 
     this.render();
     this.addListeners();
